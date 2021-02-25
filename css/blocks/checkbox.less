@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.checkbox {
+	position: absolute;
+	opacity: 0;
+}
+
+.checkbox:checked + .label {
+	background-color: @color3;
+}
+
+.checkbox:checked + .label .ball {
+	background-color: @color1;
+	transform: translateX(20px);
+}
+
+.label {
+	display: flex;
+	height: 20px;
+	width: 40px;
+
+	opacity: 0;
+	cursor: pointer;
+	background-color: @color1;
+
+	transition: opacity .2s linear;
+
+	border-radius: 50px;
+
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	z-index: 2;
+}
+
+.ball {
+	height: 16px;
+	width: 16px;
+
+	background-color: @color3;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 2;
+
+	transition: transform .2s linear;
+}

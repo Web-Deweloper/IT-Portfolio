@@ -1,0 +1,70 @@
+// compress: true
+
+@import 'vars';
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: @color1;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px 0;
+
+	@media @mobile-sm-iphone {
+		margin: 0;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Vendor
+
+@import 'vendor/slick';
+
+// Bloks ===================================
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/user';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/social';
+@import 'blocks/btn';
+@import 'blocks/works';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/about';
+@import 'blocks/reviews';
+@import 'blocks/news';
+@import 'blocks/articles';
+@import 'blocks/checkbox';
+@import 'blocks/footer';
+@import 'blocks/pulse';
+@import 'blocks/modal';
+@import 'blocks/modal-work';
+@import 'blocks/timeline';
+@import 'blocks/progress';
+@import 'blocks/contact';
+@import 'blocks/form';
+@import 'blocks/toggle';
+
+// Helpers
+@import 'blocks/helpers';

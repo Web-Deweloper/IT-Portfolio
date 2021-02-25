@@ -1,0 +1,311 @@
+// main: ../style.less
+
+.modal__work {
+	display: flex;
+	height: 500px;
+
+	@media @tablet {
+		flex-direction: column;
+		height: auto;
+	}
+
+	@media @mobile-sm-h {
+		flex-direction: initial;
+	}
+}
+
+.modal__work__preview {
+	width: 65%;
+	position: relative;
+	overflow: hidden;
+
+	border-radius: 5px 0 0 5px;
+
+	@media @tablet {
+		width: 100%;
+		height: 450px;
+	}
+
+	@media @mobile-sm {
+		height: 260px;
+	}
+
+	@media @iphone {
+		height: 200px;
+	}
+
+	@media @mobile-sm-h {
+		width: 50%;
+		height: auto;
+	}
+}
+
+.slick-slide img {
+	min-width: 780px;
+
+	@media @tablet {
+		min-width: auto;
+		max-width: 101%;
+	}
+
+	@media @mobile-sm {
+		height: inherit;
+	}
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.modal__work__photo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.modal__work__content {
+	width: 35%;
+	padding: 12px 90px 15px 15px;
+
+	position: relative;
+
+	@media @tablet {
+		width: 100%;
+		padding: 15px 15px 0;
+	}
+
+	@media @mobile-sm-h {
+		width: 50%;
+		padding: 5px 15px 15px 10px;
+	}
+}
+
+.modal__work__header {
+	@media @mobile-sm-h {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+
+	@media @mobile-sm-xs {
+		margin-bottom: 0;
+	}
+}
+
+.modal__work__title {
+	margin-bottom: 4px;
+
+	font-size: 32px;
+	color: @color1;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	@media @mobile-sm {
+		font-size: 25px;
+	}
+
+	@media @mobile-sm-h {
+		font-size: 18px;
+		margin-right: 15px;
+	}
+
+	@media @mobile-sm-iphone {
+		margin-right: 5px;
+		margin-bottom: 0;
+
+		font-size: 16px;
+	}
+}
+
+.modal__work__info {
+	margin-bottom: 33px;
+
+	font-size: 18px;
+	color: @color2;
+	text-transform: uppercase;
+
+	& span {
+		margin: 0 15px;
+
+		@media @mobile-sm-h {
+			margin: 0 5px;
+		}
+	}
+
+	@media @mobile-sm {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+
+	@media @mobile-sm-h {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	@media @mobile-sm-iphone {
+		margin-bottom: 0;
+	}
+}
+
+.modal__work__client {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 10px;
+
+	@media @mobile-sm-h {
+		margin-bottom: 10px;
+	}
+
+	@media @mobile-sm-xs {
+		margin-bottom: 5px;
+	}
+
+	@media @mobile-sm-iphone {
+		margin-bottom: 0;
+	}
+}
+
+.modal__work__client__title {
+	margin-right: 10px;
+
+	font-size: 16px;
+	color: @color1;
+	font-weight: 700;
+
+	@media @mobile-sm-iphone {
+		font-size: 14px;
+	}
+}
+
+.modal__work__client__company {
+	font-size: 14px;
+	color: @color2;
+}
+
+.modal__work__link {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+
+	@media @iphone {
+		margin-bottom: 20px;
+	}
+
+	@media @mobile-sm-h {
+		margin-bottom: 10px;
+	}
+
+	@media @mobile-sm-xs {
+		margin-bottom: 5px;
+	}
+
+	@media @mobile-sm-iphone {
+		margin-bottom: 0;
+	}
+}
+
+.modal__work__link-name {
+	margin-right: 10px;
+
+	font-size: 16px;
+   color: @color1;
+	font-weight: 700;
+	
+	@media @mobile-sm-iphone {
+		font-size: 14px;
+	}
+}
+
+.modal__work__link-go {
+	font-size: 15px;
+	color: @color1;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.modal__work__link-go:hover {
+	text-decoration: underline;
+}
+
+.modal__work__text {
+	margin-bottom: 176px;
+
+	font-size: 12px;
+	line-height: 2;
+	color: @color2;
+	font-weight: 300;
+
+	@media @tablet {
+		margin-bottom: 120px;
+	}
+
+	@media @mobile-sm {
+		margin-bottom: 80px;
+	}
+
+	@media @iphone {
+		margin-bottom: 60px;
+	}
+
+	@media @mobile-sm-h {
+		margin-bottom: 20px;
+	}
+
+	@media @mobile-sm-xs {
+		margin-bottom: 10px;
+		line-height: 1.7;
+	}
+
+	@media @mobile-sm-iphone {
+		line-height: 1.5;
+		margin-bottom: 8px;
+	}
+}
+
+.modal__work__footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 23px 16px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	@media @mobile-sm {
+		padding: 15px;
+	}
+
+	@media @mobile-sm-h {
+		padding: 0 16px 8px;
+	}
+
+	@media @mobile-sm-iphone {
+		padding-bottom: 5px;
+	}
+}
+
+.modal__work__btn {
+	padding: 0;
+
+	font-family: inherit;
+	font-size: 14px;
+	color: @color1;
+	text-transform: uppercase;
+
+	background: none;
+	border: 0;
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+
+	@media @mobile-sm-h {
+		font-size: 12px;
+	}
+}

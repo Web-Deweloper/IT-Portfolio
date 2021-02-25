@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/aos.css?v=1.1.0">
+  <link rel="stylesheet" href="css/style.css?v=1.1.1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>IT Portfolio</title>
+</head>
+
+<body>
+
+  <!-- SPRITE -->
+
+  <svg style="display: none;">
+    <symbol id="vk" viewBox="0 0 112.196 112.196">
+      <g>
+        <g>
+          <circle id="XMLID_11_" style="fill:#4D76A1;" cx="56.098" cy="56.098" r="56.098"/>
+        </g>
+        <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+          c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+          c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+          c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+          c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+          c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+          c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+          c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+          c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+          c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+          C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z"/>
+      </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <g>
+        <circle cx="12" cy="12" fill="#039be5" r="12"/><path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#fff"/>
+      </g>
+    </symbol>
+
+    <symbol id="whatsapp" viewBox="0 0 512 512">
+      <circle style="fill:#4AC959;" cx="256" cy="256" r="256"/>
+      <path style="fill:#4AC959;" d="M360.241,151.826c-14.843-3.712-36.671-16.532-50.8-21.671
+        c-55.165-17.239-129.293-3.448-149.98,60.337c-1.724,1.724-5.172,1.724-6.896,1.724c-41.374,48.269-13.791,106.882-17.239,160.323
+        c-1.177,18.839-11.083,35.497-23.831,49.588l107.282,107.17C230.931,511.067,243.355,512,256,512
+        c126.436,0,231.452-91.665,252.247-212.161L360.241,151.826z"/>
+      <g>
+        <path style="fill:#FFFFFF;" d="M248.837,108.447c-78.029,3.712-139.604,68.696-139.369,146.811
+          c0.072,23.792,5.816,46.249,15.95,66.095l-15.557,75.514c-0.841,4.086,2.843,7.663,6.901,6.701l73.995-17.53
+          c19.011,9.471,40.364,14.939,62.962,15.284c79.753,1.219,146.251-62.105,148.74-141.829
+          C405.121,174.035,334.591,104.362,248.837,108.447L248.837,108.447z M337.13,335.936c-21.669,21.669-50.483,33.604-81.13,33.604
+          c-17.944,0-35.126-4.027-51.066-11.966l-10.302-5.134l-45.37,10.747l9.549-46.356l-5.075-9.943
+          c-8.276-16.206-12.472-33.728-12.472-52.084c0-30.648,11.935-59.459,33.604-81.13c21.476-21.478,50.759-33.604,81.134-33.604
+          c30.644,0,59.458,11.935,81.127,33.604c21.669,21.669,33.604,50.483,33.604,81.127C370.735,285.177,358.607,314.459,337.13,335.936
+          L337.13,335.936z"/>
+        <path style="fill:#FFFFFF;" d="M327.115,286.582l-28.384-8.149c-3.729-1.069-7.749-0.01-10.468,2.76l-6.942,7.07
+          c-2.926,2.984-7.366,3.941-11.24,2.374c-13.427-5.434-41.672-30.548-48.881-43.106c-2.084-3.624-1.739-8.152,0.817-11.462
+          l6.058-7.839c2.374-3.07,2.874-7.197,1.305-10.747l-11.941-27.008c-2.86-6.468-11.126-8.352-16.527-3.784
+          c-7.921,6.701-17.32,16.88-18.461,28.16c-2.015,19.887,6.515,44.954,38.762,75.055c37.257,34.778,67.094,39.369,86.523,34.664
+          c11.019-2.667,19.825-13.365,25.379-22.126C336.906,296.467,333.91,288.535,327.115,286.582L327.115,286.582z"/>
+      </g>
+      <g>
+        <path style="fill:#FFFFFF;" d="M356.004,147.708l-22.223,22.778c1.131,1.045,2.257,2.096,3.351,3.191
+          c21.67,21.669,33.604,50.483,33.604,81.127c0,30.375-12.128,59.656-33.604,81.134c-21.669,21.669-50.483,33.604-81.13,33.604
+          c-17.944,0-35.125-4.027-51.066-11.966l-10.302-5.134l-45.37,10.747l0.938-4.553l-40.174,41.172
+          c0.886,2.663,3.705,4.475,6.734,3.758l73.995-17.53c19.011,9.471,40.364,14.939,62.962,15.284
+          c79.753,1.219,146.253-62.105,148.74-141.829C403.834,215.357,385.686,175.435,356.004,147.708z"/>
+        <path style="fill:#FFFFFF;" d="M327.115,286.582l-28.384-8.149c-3.729-1.069-7.749-0.01-10.468,2.76l-6.942,7.07
+          c-2.926,2.984-7.366,3.941-11.24,2.374c-7.756-3.139-20.451-12.845-31.185-22.904l-19.732,20.225
+          c0.677,0.648,1.352,1.295,2.05,1.948c37.257,34.778,67.094,39.369,86.523,34.664c11.019-2.667,19.825-13.365,25.379-22.126
+          C336.906,296.467,333.91,288.535,327.115,286.582z"/>
+      </g>
+    </symbol>
+
+    <symbol id="git" viewBox="0 0 512 512">
+      <g>
+        <path style="fill:#5C6BC0;" d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+	c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+	c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+	c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008
+	c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336
+	c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336
+	c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816
+	c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352
+	C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+      </g>
+    </symbol>
+
+    <symbol id="vk-gray" viewBox="0 0 24 24">
+      <g>
+        <path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+      </g>
+    </symbol>
+
+    <symbol id="telegram-gray" viewBox="0 0 24 24">
+      <g>
+        <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"/>
+      </g>
+    </symbol>
+
+    <symbol id="whatsapp-gray" viewBox="0 0 512 512">
+      <g>
+        <path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456
+          C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504
+          c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792
+          c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184
+          c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392
+          c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352
+          c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024
+          c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568
+          c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/>
+      </g>
+    </symbol>
+
+    <symbol id="github-gray" viewBox="0 0 512 512">
+      <g>
+        <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+          c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+          c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+          c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+          c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+          c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+          c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+          c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+          c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+      </g>
+    </symbol>
+
+    <symbol id="close" viewBox="0 0 512 512">
+      <g>
+        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M383.22,338.79
+          c11.7,11.7,11.7,30.73,0,42.44c-11.61,11.6-30.64,11.79-42.44,0L257,297.42l-85.79,83.82c-11.7,11.7-30.73,11.7-42.44,0
+          c-11.7-11.7-11.7-30.73,0-42.44l83.8-83.8l-83.8-83.8c-11.7-11.71-11.7-30.74,0-42.44c11.71-11.7,30.74-11.7,42.44,0L257,212.58
+          l83.78-83.82c11.68-11.68,30.71-11.72,42.44,0c11.7,11.7,11.7,30.73,0,42.44l-83.8,83.8L383.22,338.79z"/>
+      </g>
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 384 384">
+      <g>
+        <path d="M362.667,266.667c-26.56,0-52.267-4.267-76.16-12.16c-7.36-2.347-15.787-0.64-21.653,5.227l-46.933,47.04
+          c-60.48-30.72-109.867-80.107-140.587-140.48l46.933-47.147c5.867-5.867,7.573-14.293,5.227-21.653
+          c-7.893-23.893-12.16-49.6-12.16-76.16C117.333,9.493,107.84,0,96,0H21.333C9.6,0,0,9.493,0,21.333
+          C0,221.653,162.347,384,362.667,384c11.84,0,21.333-9.493,21.333-21.333V288C384,276.16,374.507,266.667,362.667,266.667z"/>
+      </g>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 512 512">
+      <g>
+        <g>
+          <polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+            L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="call" viewBox="0 0 384 384">
+      <g>
+        <path d="M362.667,266.667c-26.56,0-52.267-4.267-76.16-12.16c-7.36-2.347-15.787-0.64-21.653,5.227l-46.933,47.04
+          c-60.48-30.72-109.867-80.107-140.587-140.48l46.933-47.147c5.867-5.867,7.573-14.293,5.227-21.653
+          c-7.893-23.893-12.16-49.6-12.16-76.16C117.333,9.493,107.84,0,96,0H21.333C9.6,0,0,9.493,0,21.333
+          C0,221.653,162.347,384,362.667,384c11.84,0,21.333-9.493,21.333-21.333V288C384,276.16,374.507,266.667,362.667,266.667z"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="user__link" href="index.html" data-scroll="#intro">
+          <div class="user">
+            <img class="user__avatar" src="img/eduard.jpg" alt="" />
+            <div class="user__content">
+              <div class="user__name">Eduard<br />Tobolenko</div>
+              <div class="user__prof">Front-end Developer</div>
+            </div>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="#" data-scroll="#work">Work</a>
+          <a class="nav__link" href="#" data-scroll="#about">About me</a>
+          <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+          <a class="nav__link" href="#" data-scroll="#Literature">Literature</a>
+          <a class="nav__link nav__link--btn" data-modal='#modal_hire_me' href="#">Hire me</a>
+        </nav>
+        <button class="nav__toggle" type="button" id="navToggle">
+          <span class="nav__toggle__item">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro" id="intro">
+    <div class="container">
+
+      <div class="intro__inner">
+        <div class="intro__content" data-aos="fade-right">
+          <h2 class="intro__subtitle">Hello, I’m</h2>
+          <h1 class="intro__title">Eduard Tobolenko</h1>
+          <div class="intro__text">Front-end Developer</div>
+
+          <div class="social">
+
+            <a class="social__link" href="https://vk.com/medved__balalaika" target="blank">
+              <svg class="social__icon">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+
+            <a class="social__link" href="https://t.me/medved_balalaika" target="blank">
+              <svg class="social__icon">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </a>
+
+            <a class="social__link" href="https://wa.me/qr/4BZ5RSRYNGWVC1" target="blank">
+              <svg class="social__icon">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </a>
+
+            <a class="social__link" href="https://github.com/Web-Deweloper" target="blank">
+              <svg class="social__icon">
+                <use xlink:href="#git"></use>
+              </svg>
+            </a>
+          </div>
+
+          <button class="btn" type="button" data-modal='#modal_hire_me'>Hire me</button>
+
+          <button class="btn" type="button" data-modal='#modal_resume'>See my resume</button>
+        </div>
+        <!--intro__content-->
+        <img class="intro__photo" src="img/photo.png" alt=""  data-aos="fade-left">
+      </div>
+      <!--intro__inner-->
+
+    </div>
+    <!--container-->
+  </section>
+  <!--intro-->
+
+  <div class="works" id="work">
+    <div class="container">
+
+      <div class="works__nav">
+        <a class="works__link" href="#" data-filter='all'>All</a>
+        <a class="works__link" href="#" data-filter='website'>Website</a>
+        <a class="works__link" href="#" data-filter='app'>App</a>
+        <a class="works__link" href="#" data-filter='interaction'>Interaction</a>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+
+        <div class="portfolio__col" data-cat='website' data-aos="fade-in" data-aos-delay="75">
+          <div class="portfolio__item" data-modal='#modal_project_1'>
+            <img class="portfolio__img" src="img/370х300/1.png" alt="">
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: Website</div>
+              <div class="portfolio__title">Trans Logistic
+                <time class="work__date" datetime="2021-02-23 19:00">
+                  2021
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='app' data-aos="fade-in" data-aos-delay="150">
+          <div class="portfolio__item" data-modal='#modal_project_2'>
+            <a href="#">
+              <img class="portfolio__img" src="img/370х300/2.png" alt="">
+            </a>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: App</div>
+              <div class="portfolio__title">inWeb
+                <time class="work__date" datetime="2020-02-23 19:00">
+                  2020
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='website' data-aos="fade-in" data-aos-delay="75">
+          <div class="portfolio__item" data-modal='#modal_project_3'>
+            <a href="#">
+              <img class="portfolio__img" src="img/370х300/3.png" alt="">
+            </a>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: Website</div>
+              <div class="portfolio__title">Valorant
+                <time class="work__date" datetime="2021-02-23 19:00">
+                  2021
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='website' data-aos="fade-in" data-aos-delay="150">
+          <div class="portfolio__item" data-modal='#modal_project_4'>
+            <a href="#">
+              <img class="portfolio__img" src="img/370х300/4.png" alt="">
+            </a>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: Website</div>
+              <div class="portfolio__title">DevAid
+                <time class="work__date" datetime="2021-02-23 19:00">
+                  2021
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='app' data-aos="fade-in" data-aos-delay="75">
+          <div class="portfolio__item" data-modal='#modal_project_5'>
+            <a href="#">
+              <img class="portfolio__img" src="img/370х300/5.png" alt="">
+            </a>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: App</div>
+              <div class="portfolio__title">Minimo
+                <time class="work__date" datetime="2020-02-23 19:00">
+                  2020
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='interaction' data-aos="fade-in" data-aos-delay="150">
+          <div class="portfolio__item" data-modal='#modal_project_6'>
+            <a href="#">
+              <img class="portfolio__img" src="img/370х300/6.png" alt="">
+            </a>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: Interaction</div>
+              <div class="portfolio__title">House
+                <time class="work__date" datetime="2020-02-23 19:00">
+                  2020
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='interaction' data-aos="fade-in" data-aos-delay="75">
+          <div class="portfolio__item" data-modal='#modal_project_7'>
+            <img class="portfolio__img" src="img/370х300/7.png" alt="">
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: interaction</div>
+              <div class="portfolio__title">Monoteka
+                <time class="work__date" datetime="2020-02-23 19:00">
+                  2020
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat='app' data-aos="fade-in" data-aos-delay="150">
+          <div class="portfolio__item portfolio__item-noactive">
+            <img class="portfolio__img" src="img/370х300/8.png" alt="">
+            <div class="portfolio__coming">Coming Soon...</div>
+            <div class="portfolio__content">
+              <div class="portfolio__cat">Category: App</div>
+              <div class="portfolio__title">Coming Soon...
+                <time class="work__date" datetime="2020-02-23 19:00">
+                  2020
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--portfolio-->
+      <div class="text__center">
+        <button class="btn btn--sm" type="button">load more work</button>
+      </div>
+    </div>
+    <!--container-->
+  </div>
+  <!--works-->
+
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+
+        <div class="about__photo" data-aos="fade-right">
+          <img class="img" src="img/about-photo.png" alt="">
+        </div>
+        <div class="about__content">
+          <h3 class="about__title" data-aos="fade-down">ABOUT ME</h3>
+          <h2 class="big__title" data-aos="fade-up">WHO AM I</h2>
+          <div class="about__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed
+              augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum
+              consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo.</p>
+            <p> Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis,
+              lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula.
+            </p>
+            <p>Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
+              placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae
+              dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis.</p>
+          </div>
+          <a class="btn" href="#" data-modal='#modal_hire_me'>Hire me</a>
+          <a class="btn" href="#" data-modal='#modal_resume'>See my resume</a>
+        </div>
+        <!--about__content-->
+
+      </div>
+      <!--about__inner-->
+    </div>
+    <!--container-->
+  </section>
+
+  <div class="reviews" id="blog">
+    <div class="container">
+      <div class="reviews__item">
+
+        <div class="reviews__text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sequi eligendi doloremque consectetur.
+            Voluptatibus voluptates aperiam dignissimos aut commodi consequuntur explicabo ipsum repellat in accusamus!
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo in rem maxime, inventore totam rerum placeat
+            exercitationem laborum sit optio sequi dolores neque natus amet odio libero quae. Voluptatum, veniam.</p>
+        </div>
+        <div class="reviews__author">
+            <img class="reviews__photo" src="img/reviews-photo.jpg" alt="" id="photo">
+
+            <div class="reviews__author-text">
+              <h4 class="reviews__title">Eduard Tobolenko</h4>
+              <div class="reviews__place">Moskau, Russia</div>
+            </div>
+            <div class="reviews__content">
+              <p>Front-end Developer</p>
+              <div class="reviews__btn-flex">
+                <a class="reviews__btn-link" href="https://vk.com/im?sel=230663985" target="blank">Message</a>
+                <a class="reviews__btn-link" href="https://vk.com/medved__balalaika" target="blank">Following</a>
+              </div>
+
+              <div class="reviews__icons">
+                <ul>
+                  <li class="reviews__icons-list">
+                    <a href="https://vk.com/medved__balalaika" target="blank">
+                      <svg class="reviews__icons-svg">
+                        <use xlink:href="#vk-gray"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li class="reviews__icons-list-2">
+                    <a href="https://t.me/medved_balalaika" target="blank">
+                      <svg class="reviews__icons-svg">
+                        <use xlink:href="#telegram-gray"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li class="reviews__icons-list-3">
+                    <a href="https://wa.me/qr/4BZ5RSRYNGWVC1" target="blank">
+                      <svg class="reviews__icons-svg">
+                        <use xlink:href="#whatsapp-gray"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li class="reviews__icons-list-4">
+                    <a href="https://github.com/Web-Deweloper" target="blank">
+                      <svg class="reviews__icons-svg">
+                        <use xlink:href="#github-gray"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div><!--reviews__icons-->
+        </div>
+        </div>
+
+      </div>
+      <!--reviews__item-->
+    </div>
+    <!--container-->
+  </div>
+  <!--reviews-->
+
+
+  <section class="news" id="Literature">
+    <div class="container">
+
+      <div class="news__header">
+        <h3 class="news__title">what i read</h3>
+        <div class="news__text">Sometimes I read something smart</div>
+      </div>
+
+      <div class="articles">
+        <div class="articles__col"  data-aos="fade-right">
+          <div class="articles__item">
+            
+            <div class="articles__header">
+                <img class="articles__photo" src="img/book/book-1.jpg" alt="">
+                <div class="articles__text" id="text1">
+                  <h3 class="articlies__subtitle" id="subtitle1">Ghost Version</h3>
+                  <input class="checkbox" type="checkbox" id="checkbox1">
+                  <label class="label" for="checkbox1">
+                    <span class="ball"></span>
+                  </label>
+                  <p class="articles__description" id="description1">Get ahead in HTML5, including markup, styling, and scripting, with many practical examples and best practice insights. You’ll quickly understand HTML5 markup elements and when to use them, and then apply the latest CSS3 features to create amazing web pages.
+                  Pro HTML5 with CSS, JavaScript, and Multimedia teaches the fundamentals of client-side scripting and covers.</p>
+                </div>
+            </div>
+
+            <div class="articles__content">
+              <h4 class="articles__title"><a href="https://www.amazon.com/Pro-HTML5-CSS-JavaScript-Multimedia-ebook/dp/B06XPNJSN9" target="blank">html5, ccs, javascript</a></h4>
+              <div class="articles__category">Literature</div>
+            </div>
+            <a class="btn btn--sm" href="https://www.amazon.com/Pro-HTML5-CSS-JavaScript-Multimedia-ebook/dp/B06XPNJSN9" target="blank">Read More</a>
+          </div><!--articles__item-->
+        </div><!--articles__col-->
+
+        <div class="articles__col" data-aos="fade-right">
+          <div class="articles__item">
+            <div class="articles__header">
+                <img class="articles__photo" src="img/book/book-2.jpeg" alt="">
+                <div class="articles__text" id="text2">
+                  <h3 class="articlies__subtitle" id="subtitle2">Ghost Version</h3>
+                  <input class="checkbox" type="checkbox" id="checkbox2">
+                  <label class="label" for="checkbox2">
+                    <span class="ball"></span>
+                  </label>
+                  <p class="articles__description" id="description2">It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the "You Don’t Know JS" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid. The series’ first book.</p>
+                </div>
+            </div>
+            <div class="articles__content">
+              <h4 class="articles__title"><a href="https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462" target="blank">Up &amp; Going JavaScript</a></h4>
+              <div class="articles__category">Literature</div>
+            </div>
+            <a class="btn btn--sm" href="https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462" target="blank">Read More</a>
+          </div><!--articles__item-->
+        </div><!--articles__col-->
+
+        <div class="articles__col" data-aos="fade-right">
+          <div class="articles__item">
+            <div class="articles__header">
+                <img class="articles__photo" src="img/book/book-3.jpg" alt="">
+                <div class="articles__text" id="text3">
+                  <h3 class="articlies__subtitle" id="subtitle3">Ghost Version</h3>
+                  <input class="checkbox" type="checkbox" id="checkbox3">
+                  <label class="label" for="checkbox3">
+                    <span class="ball"></span>
+                  </label>
+                  <p class="articles__description" id="description3">With so much information about web development and online coding tutorials out there, it can be difficult to know where to start. Many guides, websites and books can be confusing and don’t make it easy for those starting out, wanting to build a solid foundation and understanding. HTML 101 fills in the gap and provides a great place to start learning something new.</p>
+                </div>
+            </div>
+            <div class="articles__content">
+              <h4 class="articles__title"><a href="https://www.amazon.com/HTML-CSS-101-Essential-Beginners/dp/1911174479" target="blank">Html 101 Codnig</a></h4>
+              <div class="articles__category">Literature</div>
+            </div>
+            <a class="btn btn--sm" href="https://www.amazon.com/HTML-CSS-101-Essential-Beginners/dp/1911174479" target="blank">Read More</a>
+          </div><!--articles__item-->
+        </div><!--articles__col-->
+      </div>
+      <!--articles-->
+
+      <div class="news__footer">
+        <button class="news__link" type="button">See more posts</button>
+      </div>
+
+    </div>
+    <!--container-->
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__inner">
+        <div class="footer__credits">
+          <div class="footer__copy">&copy; 2020 All rights reserved</div>
+
+          <div class="footer__social">
+            <a href="https://vk.com/medved__balalaika" target="blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="#vk-gray"></use>
+              </svg>
+            </a>
+
+            <a href="https://t.me/medved_balalaika" target="blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="#telegram-gray"></use>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/qr/4BZ5RSRYNGWVC1" target="blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="#whatsapp-gray"></use>
+              </svg>
+            </a>
+
+            <a href="https://github.com/Web-Deweloper" target="blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="#github-gray"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <a class="footer__link" href="#" data-scroll="#work">Work</a>
+          <a class="footer__link" href="#" data-scroll="#about">About me</a>
+          <a class="footer__link" href="#" data-scroll="#blog">Blog</a>
+          <a class="footer__link" href="#" data-scroll="#Literature">Literature</a>
+          <a class="footer__link footer__link--btn" href="#" data-modal='#modal_hire_me'>Hire me</a>
+        </nav>
+      </div>
+      <!--footer__inner-->
+
+    </div>
+    <!--container-->
+  </footer>
+
+  <div class="pulse" data-modal='#modal_hire_me'>
+    <div class="pulse__phone">
+      <svg class="pulse__svg">
+        <use xlink:href="#phone"></use>
+      </svg>
+    </div>
+    <div class="pulse__text">Let's Talk!</div>
+  </div>
+
+
+  <!--MODALS-->
+  <div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        <svg class="modal__close-svg" data-close>
+          <use xlink:href="#close"></use>
+        </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/1.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/11.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/111.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">TRANS LOGISTIC</h3>
+            <div class="modal__work__info">
+              Website <span>|</span> 2021
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://trans-logistic.portfolio-it.ru" target="blank">trans-logistic.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <!--MODALS-->
+  <div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+          <use xlink:href="#close"></use>
+        </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/2.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/22.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">INWEB</h3>
+            <div class="modal__work__info">
+              App <span>|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://inweb.portfolio-it.ru" target="blank">inweb.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+  <div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/6.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/66.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/666.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">Valorant</h3>
+            <div class="modal__work__info">
+              Website <span>|</span> 2021
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://valorant.portfolio-it.ru" target="blank">valorant.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <div class="modal" id="modal_project_4">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/4.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/44.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/444.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">DevAid</h3>
+            <div class="modal__work__info">
+              Website <span>|</span> 2021
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://devaid.portfolio-it.ru"
+              target="blank">devaid.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <div class="modal" id="modal_project_5">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <div>
+                <img class="modal__work__photo" src="img/780x500/5.png" alt="">
+              </div>
+            </div>
+            <div>
+              <div>
+                <img class="modal__work__photo" src="img/780x500/55.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">Minimo</h3>
+            <div class="modal__work__info">
+              App <span>|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://minimo.portfolio-it.ru" target="blank">minimo.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <div class="modal" id="modal_project_6">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/3.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/333.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">Home</h3>
+            <div class="modal__work__info">
+              Interaction <span>|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://house.portfolio-it.ru" target="blank">house.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+
+  <div class="modal" id="modal_project_7">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__work">
+        <div class="modal__work__preview">
+          <div data-slider="slick">
+            <div>
+              <img class="modal__work__photo" src="img/780x500/7.png" alt="">
+            </div>
+            <div>
+              <img class="modal__work__photo" src="img/780x500/77.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work__content">
+          <div class="modal__work__header">
+            <h3 class="modal__work__title">Monoteka</h3>
+            <div class="modal__work__info">
+              Interaction <span>|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal__work__client">
+            <div class="modal__work__client__title">Client:</div>
+            <div class="modal__work__client__company">Creative Agency</div>
+          </div>
+
+          <div class="modal__work__link">
+            <div class="modal__work__link-name">Link: </div>
+            <a class="modal__work__link-go" href="https://monoteka.portfolio-it.ru" target="blank">monoteka.portfolio-it.ru</a>
+          </div>
+
+          <div class="modal__work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque beatae libero sit eveniet animi nisi
+              nihil corporis, eius assumenda. Officiis aliquam quis soluta repellat reiciendis non, in inventore ea.</p>
+          </div>
+
+          <div class="modal__work__footer">
+            <button class="modal__work__btn slickPrev" type="button">
+              <img src="img/back.svg" alt="" height="12">
+              PREVIOUS</button>
+            <button class="modal__work__btn slickNext" type="button">NEXT
+              <img src="img/next.svg" alt="" height="12">
+            </button>
+          </div>
+        </div>
+        <!--modal-work-content-->
+      </div>
+      <!--modal-work-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <!--MODALS-->
+  <div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="modal__content">
+
+        <h3 class="modal__title text__center">Resume</h3>
+
+        <div class="text__center">
+          <a class="btn btn--thin" href="#">Download pdf</a>
+          <a class="btn btn--thin" href="#">Print</a>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__col text__right">
+            <h4 class="timeline__title">EXPERIENCE</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="2019-03-21 19:00">
+                2020 <b>Present</b>
+              </time>
+              <h5 class="timeline__subtitle">Junior Front-end Developer</h5>
+              <div class="timeline__text">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p><p>Nemo enim ipsam voluptatem quia.</p>
+              </div>
+
+              <time class="timeline__date" datetime="2019-03-21 19:00">
+                2019
+              </time>
+              <h5 class="timeline__subtitle">HTML Coder</h5>
+              <div class="timeline__text">
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was.</p><p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who. </p><p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p>
+              </div>
+
+              <time class="timeline__date" datetime="2019-03-21 19:00">
+                2018
+              </time>
+              <h5 class="timeline__subtitle">Freelancer</h5>
+              <div class="timeline__text">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p><p> Et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="timeline__col text__left">
+            <h4 class="timeline__title">EDUCATION</h4>
+
+            <time class="timeline__date" datetime="2019-03-21 19:00">
+              2012 - 2016
+            </time>
+            <h5 class="timeline__subtitle">Information Systems Technician</h5>
+            <div class="timeline__city">Russia Сollege</div>
+
+            <time class="timeline__date" datetime="2019-03-21 19:00">
+              2009 - 2012
+            </time>
+            <h5 class="timeline__subtitle">Electronic Programmer</h5>
+            <div class="timeline__city">Russian University</div>
+
+            <h4 class="timeline__title">Skills</h4>
+            <div class="progress__bar">
+              <div class="progress__bar__left">
+                <div class="progress__bar__title">HTML/CSS</div>
+              </div>
+              <div class="progress__bar__right">
+                <div class="progress__bar__item">
+                  <div class="progress__bar__progress" style="width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__bar">
+              <div class="progress__bar__left">
+                <div class="progress__bar__title">JS/JQUERY</div>
+              </div>
+              <div class="progress__bar__right">
+                <div class="progress__bar__item">
+                  <div class="progress__bar__progress" style="width: 70%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__bar">
+              <div class="progress__bar__left">
+                <div class="progress__bar__title">Scss/Less</div>
+              </div>
+              <div class="progress__bar__right">
+                <div class="progress__bar__item">
+                  <div class="progress__bar__progress" style="width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__bar">
+              <div class="progress__bar__left">
+                <div class="progress__bar__title">Gulp/Bootstrap</div>
+              </div>
+              <div class="progress__bar__right">
+                <div class="progress__bar__item">
+                  <div class="progress__bar__progress" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress__bar">
+              <div class="progress__bar__left">
+                <div class="progress__bar__title">Photoshop</div>
+              </div>
+              <div class="progress__bar__right">
+                <div class="progress__bar__item">
+                  <div class="progress__bar__progress" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="timeline__title">AWARDS</h4>
+
+            <time class="timeline__date" datetime="2019-03-21 19:00">
+              2019
+            </time>
+            <h5 class="timeline__subtitle">Best Student</h5>
+            <div class="timeline__prof">Russian University</div>
+            <div class="timeline__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor ullamcorper.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <!--timeline-->
+
+        <section class="skills" id="skills">
+    <div class="container">
+      <h3 class="skills__title">Skills</h3>
+      <div class="skills__item">
+        <span style="--logotip:1;"><img class="slills__img" src="img/skills/html.png" alt=""></span>
+        <span style="--logotip:2"><img class="slills__img" src="img/skills/css.png" alt=""></span>
+        <span style="--logotip:3"><img class="slills__img" src="img/skills/js.png" alt=""></span>
+        <span style="--logotip:4"><img class="slills__img" src="img/skills/jquery.png" alt=""></span>
+        <span style="--logotip:5"><img class="slills__img" src="img/skills/react.png" alt=""></span>
+        <span style="--logotip:6"><img class="slills__img" src="img/skills/gulp.png" alt=""></span>  
+        <span style="--logotip:7"><img class="slills__img" src="img/skills/sass.png" alt=""></span>
+        <span  style="--logotip:8"><img class="slills__img" src="img/skills/bootstrap.png" alt=""></span>
+      </div>
+    </div>
+  </section>
+
+        <div class="text__center">
+          <a class="btn" href="#" data-modal='#modal_hire_me'>HIRE ME</a>
+        </div>
+
+      </div>
+      <!--modal__content-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+  <!--MODALS-->
+  <div class="modal" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog--xs">
+
+      <svg class="modal__close-svg" data-close>
+        <use xlink:href="#close"></use>
+      </svg>
+
+      <div class="contact">
+        <div class="contact__left">
+          <h3 class="modal__title mb-0">LET'S TALK!</h3>
+          <div class="modal__subtitle">
+            CALL ME OR SEND ME A REQUEST
+          </div>
+
+          <ul class="contact__info">
+            <li class="contact__info__item">
+              <svg class="contact__info-svg">
+                <use xlink:href="#call"></use>
+              </svg>
+              <a class="contacts__info__link" href="tel:+79857499499">+7(9857)499-499</a>
+            </li>
+            <li class="contact__info__item">
+              <svg class="contact__info-svg">
+                <use xlink:href="#mail"></use>
+              </svg>
+              <a class="contacts__info__link" href="mailto:ediktobolenko@gmail.com">ediktobolenko@gmail.com</a>
+            </li>
+          </ul>
+
+          <form class="form" action="/" method="POST">
+            <div class="form__group">
+              <label class="form__label" for="input-email">Adress e-mail</label>
+              <input class="form__input" name="input-email" type="text" id="input-email" placeholder="E-mail">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="input-text">Request</label>
+              <textarea class="form__textarea" name="input-text" id="input-text"
+                placeholder="Type your request..."></textarea>
+            </div>
+
+            <div class="text__right text__right--xs">
+              <button class="btn" type="button">Send</button>
+
+              <button class="btn" type="button" data-modal='#modal_resume'>See my resume</button>
+            </div>
+
+          </form>
+
+        </div>
+        <!--contact__left-->
+      </div>
+      <!--contact-->
+
+    </div>
+    <!--modal-dialog-->
+  </div>
+  <!--modal-->
+
+
+  <!--JS-->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="JS/app.js?v=1.1.0"></script>
+
+</body>
+
+</html>

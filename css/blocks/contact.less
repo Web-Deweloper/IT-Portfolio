@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.contact {
+	display: flex;
+}
+
+.contact__left {
+	width: 100%;
+	padding: 30px;
+
+	@media @mobile {
+		width: 100%;
+	}
+
+	@media @mobile-sm-h {
+		text-align: center;
+	}
+}
+
+.modal__subtitle {
+	font-size: 16px;
+	color: @color1;
+	text-transform: uppercase;
+
+	@media @mobile-sm-h {
+		font-size: 13px;
+	}
+}
+
+.contact__info {
+	margin: 30px 0 45px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contacts__info__link {
+	font-size: 15px;
+	color: @color1;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.contacts__info__link:hover {
+	text-decoration: underline;
+}
+
+.contact__info__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	@media @mobile-sm-h {
+		justify-content: center;
+	}
+}
+
+.contact__info-svg {
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+}

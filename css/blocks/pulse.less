@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.pulse {
+	width: 75px;
+	height: 75px;
+
+	text-align: center;
+	background: @color1;
+	cursor: pointer;
+
+	border: 2px solid @color3;
+	border-radius: 50%;
+
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 2;
+
+	&:hover .pulse__text {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+
+	&:hover .pulse__svg {
+		transition: transform .5s ease-in-out;
+		transform: scale(0);
+	}
+
+	&:hover::before,
+	&:hover::after {
+		content: "";
+		position: absolute;
+		border: 1px solid @color1;
+		left: -20px;
+		right: -20px;
+		top: -20px;
+		bottom: -20px;
+		border-radius: 50%;
+		opacity: 0;
+		animation: pulse 2s linear infinite;
+	}
+
+	&:hover::after {
+		animation-delay: .5s;
+	}
+}
+
+.pulse__phone {
+	animation: phone 1s ease-in-out infinite;
+}
+
+.pulse__svg {
+	width: 40px;
+	height: 40px;
+	margin-top: 13px;
+
+	opacity: 1;
+	fill: @color3;
+
+	transition: transform .5s ease-in-out;
+}
+
+.pulse__text {
+	color: @color3;
+	font-size: 17px;
+	font-weight: 700;
+	
+	text-transform: uppercase;
+	opacity: 0;
+
+	transform: scaleX(-1);
+	transition: all .5s ease-in-out;
+	
+	position: absolute;
+	top: 16px;
+}
+
+@keyframes phone {
+	0%, 100%{transform: rotate(-20deg);}
+	50%{transform: rotate(20deg);}
+}
+
+@keyframes pulse {
+	0%{transform: scale(0.5);
+	opacity: 0;}
+	50%{opacity: 1;}
+	100%{transform: scale(1.2);
+	opacity: 0;}
+}

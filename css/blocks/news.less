@@ -1,0 +1,40 @@
+// main: ../style.less
+
+.news {
+	margin: 250px 0 120px 0;
+
+	@media @tablet {
+		margin: 230px 0 35px 0;
+	}
+}
+
+.news__header {
+	text-align: center;
+}
+
+.news__title {
+	margin-bottom: 5px;
+
+	font-size: 45px;
+	line-height: 1.1;
+	color: @color1;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	@media @mobile {
+		font-size: 30px;
+	}
+}
+
+.news__text {
+	margin-bottom: 55px;
+	
+	flex: 18;
+	color: @color4;
+	font-weight: 300;
+
+	@media @mobile {
+		margin-bottom: 35px;
+	}
+}
+

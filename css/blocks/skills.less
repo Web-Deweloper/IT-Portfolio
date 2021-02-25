@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.skills {
+	margin: 50px 0;
+
+	@media @mobile {
+		margin: 30px 0 0 0;
+	}
+}
+
+.skills__title {
+	margin-bottom: 90px;
+	
+	font-size: 45px;
+	line-height: 1.1;
+	color: @color1;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media @tablet {
+		margin-bottom: 60px;
+	}
+
+	@media @mobile {
+		font-size: 38px;
+	}
+}
+
+.skills__item {
+	margin: 0 auto;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transform-style: preserve-3d;
+	animation: skills 25s linear infinite;
+
+	& span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform-origin: center;
+		transform-style: preserve-3d;
+		transform: rotateY(calc(var(--logotip)*45deg)) translateZ(250px);
+
+		@media @mobile {
+			transform: rotateY(calc(var(--logotip)*45deg)) translateZ(150px);
+		}
+
+		@media @mobile-sm-h {
+			transform: rotateY(calc(var(--logotip)*45deg)) translateZ(240px);
+		}
+
+		@media @iphone {
+			transform: rotateY(calc(var(--logotip)*45deg)) translateZ(100px);
+		}
+	}
+}
+
+.slills__img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: auto;
+	object-fit: cover;
+
+	@media @mobile {
+		width: 80px;
+	}
+
+	@media @iphone {
+		width: 65px;
+	}
+}
+
+@keyframes skills {
+	0%{transform: perspective(1000px)rotateY(0deg)}
+	100%{transform: perspective(1000px)rotateY(-360deg)}
+}

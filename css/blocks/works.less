@@ -1,0 +1,37 @@
+// main: ../style.less
+
+.works {
+	margin: 41px 0;
+}
+
+.works__nav {
+	display: flex;
+	justify-content: center;
+}
+
+.works__link {
+	margin: 0 20px 10px;
+	font-size: 16px;
+	color: fade(@color1, 70%);
+	text-decoration: none;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: fade(@color1, 70%);
+
+		transform: scale(0);
+		transition: transform .2s linear;
+	}
+
+	&:hover::after {
+		transform: scale(1);
+	}
+
+	@media @iphone {
+		margin: 0 16px;
+		font-size: 14px;
+	}
+}
